@@ -1,9 +1,31 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import MEPNG from "../../public/me.png";
 import FBSVG from "../../public/facebook_icon.svg";
 import ZALOSVG from "../../public/ZALO.jpg";
 import YOUTUBESVG from "../../public/youtube.png";
+import { Metadata } from "next";
+const url = 'https://nickdaoquan.vn';
+
+export const metadata: Metadata = {
+  metadataBase: new URL(url),
+  title: 'Nguyễn Thành Thức - Nhập Mua Bán Nick Game',
+  description: 'Uy tín - Chất Lượng - Không bắt Scam',
+  keywords: [
+    'ngoc rong online',
+    'Shop Nick Ngọc Rồng Online',
+    'Shop Nick Liên Quân',
+    'Shop Nick Free Fire',
+  ],
+  applicationName: 'nickdaoquan.vn',
+  authors: [
+    {
+      name: 'Nguyễn Thành Thức',
+    }
+  ],
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 
 export default function Home() {
   return (
@@ -25,7 +47,8 @@ export default function Home() {
             height={300}
           />
         </a>
-        <p style={{ color: "red" }}>Chỉ Nhập Nick Ở Server Chính, Không Nhập Nick Server Lậu Nhé Anh Em</p>
+        <p style={{textAlign: "center", color: "red" }}>Shop Nick Ngọc Rồng, Liên Quân, Free Fire, Avatar Sẽ Sớm Khai Trương, Thiếu Nick Để Bán Thôi !!!</p>
+        <p style={{textAlign: "center", color: "red" }}>Chỉ Nhập Nick Ở Server Chính, Không Nhập Nick Server Lậu Nhé Anh Em</p>
       </main>
       <footer className={styles.footer}>
         <a
